@@ -1,60 +1,17 @@
-package main
+package app
 
 import (
 	"fmt"
 	"log"
 	"net/http"
-	"slices"
 	"strconv"
 
+	"github.com/DimitriLaPoudre/InazuScrap/internal/player"
 	"github.com/PuerkitoBio/goquery"
 )
 
-type Player struct {
-	name         string
-	position     string
-	element      string
-	kick         uint
-	control      uint
-	technique    uint
-	pressure     uint
-	physical     uint
-	agility      uint
-	intelligence uint
-	sum          uint
-}
-
-func (p Player) String() string {
-	return fmt.Sprint(p.name,
-		"\n", p.position,
-		"\n", p.element,
-		"\nTotal: ", p.sum,
-		"\n\tKick: ", p.kick,
-		"\n\tControl: ", p.control,
-		"\n\tTechnique: ", p.technique,
-		"\n\tPressure: ", p.pressure,
-		"\n\tPhysical: ", p.physical,
-		"\n\tAgility: ", p.agility,
-		"\n\tIntelligence: ", p.intelligence)
-	// return "test"
-}
-
-// func (p *Player) String() string {
-// 	return fmt.Sprintf(p.name, "\t", p.position,
-// 		"\n\tKick: ", p.kick,
-// 		"\n\tControl: ", p.control,
-// 		"\n\tTechnique: ", p.technique,
-// 		"\n\tPressure: ", p.pressure,
-// 		"\n\tPhysical: ", p.physical,
-// 		"\n\tAgility: ", p.agility,
-// 		"\n\tIntelligence: ", p.intelligence)
-// }
-
-func main() {
-	var GK []Player
-	var DF []Player
-	var MF []Player
-	var FW []Player
+func Scrap() []player.Player {
+	var players []player.Player
 	for page := 1; ; page++ {
 		resp, err := http.Get(fmt.Sprintf("https://zukan.inazuma.jp/en/chara_param/?page=%d&per_page=1000", page))
 		if err != nil {
@@ -65,16 +22,15 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-
 		resp.Body.Close()
 
 		result := doc.Find("ul.charaListBox li").Each(func(i int, s *goquery.Selection) {
-			var newPlayer Player
+			var newPlayer player.Player
 			name := s.Find("div.nameBox span.name ruby").First().Text()
 			if name == "" {
 				return
 			}
-			newPlayer.name = name
+			newPlayer.Name = name
 
 			s.Find("div.detailBox div.rBox ul.param li").Each(func(i int, s *goquery.Selection) {
 				statName := s.Find("dl:not([class]) dt").Text()
@@ -84,97 +40,79 @@ func main() {
 					if position == "" {
 						return
 					}
-					newPlayer.position = position
+					newPlayer.Position = position
 
 					element := s.Find("dl.box dd p").Text()
 					if element == "" {
 						return
 					}
-					newPlayer.element = element
+					newPlayer.Element = element
 				case "Kick":
 					kick := s.Find("dl dd table tbody tr").Eq(1).Find("td").Text()
 					value, err := strconv.ParseUint(kick, 10, strconv.IntSize)
 					if err != nil {
 						return
 					}
-					newPlayer.kick = uint(value)
+					newPlayer.Kick = uint(value)
 				case "Control":
 					control := s.Find("dl dd table tbody tr").Eq(1).Find("td").Text()
 					value, err := strconv.ParseUint(control, 10, strconv.IntSize)
 					if err != nil {
 						return
 					}
-					newPlayer.control = uint(value)
+					newPlayer.Control = uint(value)
 				case "Technique":
 					technique := s.Find("dl dd table tbody tr").Eq(1).Find("td").Text()
 					value, err := strconv.ParseUint(technique, 10, strconv.IntSize)
 					if err != nil {
 						return
 					}
-					newPlayer.technique = uint(value)
+					newPlayer.Technique = uint(value)
 				case "Pressure":
 					pressure := s.Find("dl dd table tbody tr").Eq(1).Find("td").Text()
 					value, err := strconv.ParseUint(pressure, 10, strconv.IntSize)
 					if err != nil {
 						return
 					}
-					newPlayer.pressure = uint(value)
+					newPlayer.Pressure = uint(value)
 				case "Physical":
 					physical := s.Find("dl dd table tbody tr").Eq(1).Find("td").Text()
 					value, err := strconv.ParseUint(physical, 10, strconv.IntSize)
 					if err != nil {
 						return
 					}
-					newPlayer.physical = uint(value)
+					newPlayer.Physical = uint(value)
 				case "Agility":
 					agility := s.Find("dl dd table tbody tr").Eq(1).Find("td").Text()
 					value, err := strconv.ParseUint(agility, 10, strconv.IntSize)
 					if err != nil {
 						return
 					}
-					newPlayer.agility = uint(value)
+					newPlayer.Agility = uint(value)
 				case "Intelligence":
 					intelligence := s.Find("dl dd table tbody tr").Eq(1).Find("td").Text()
 					value, err := strconv.ParseUint(intelligence, 10, strconv.IntSize)
 					if err != nil {
 						return
 					}
-					newPlayer.intelligence = uint(value)
+					newPlayer.Intelligence = uint(value)
 
 				}
 			})
-			newPlayer.sum = newPlayer.kick + newPlayer.control + newPlayer.technique + newPlayer.pressure + newPlayer.physical + newPlayer.agility + newPlayer.intelligence
-			switch newPlayer.position {
-			case "GK":
-				GK = append(GK, newPlayer)
-			case "DF":
-				DF = append(DF, newPlayer)
-			case "MF":
-				MF = append(MF, newPlayer)
-			case "FW":
-				FW = append(FW, newPlayer)
-			}
+			newPlayer.Sum = newPlayer.Kick +
+				newPlayer.Control +
+				newPlayer.Technique +
+				newPlayer.Pressure +
+				newPlayer.Physical +
+				newPlayer.Agility +
+				newPlayer.Intelligence
+
+			players = append(players, newPlayer)
 		})
 		if result.Length() == 0 {
 			break
 		}
-	}
-	slices.SortFunc(GK, func(a, b Player) int {
-		return int(a.sum) - int(b.sum)
-	})
-	slices.SortFunc(DF, func(a, b Player) int {
-		return int(a.sum) - int(b.sum)
-	})
-	slices.SortFunc(MF, func(a, b Player) int {
-		return int(a.sum) - int(b.sum)
-	})
-	slices.SortFunc(FW, func(a, b Player) int {
-		return int(a.sum) - int(b.sum)
-	})
 
-	for _, player := range DF {
-		if player.sum == 691 {
-			fmt.Println(player)
-		}
 	}
+	return players
 }

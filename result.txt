@@ -1,108 +1,108 @@
-	GK
-	[
-		Kick: 90
-		Control: 97
-		Technique: 91
-		Pressure: 98
-		Physical: 105
-		Agility: 111
-		Intelligence: 97
-	]
-	Jean-Pierre Lapin
-	Mark Evans
-	Joseph King
-	Silvia Woods
+GK
+[
+	Kick: 90
+	Control: 97
+	Technique: 91
+	Pressure: 98
+	Physical: 105
+	Agility: 111
+	Intelligence: 97
+]
+Jean-Pierre Lapin
+Mark Evans
+Joseph King
+Silvia Woods
 
-	DF
-	[
-		Kick: 90
-		Control: 94
-		Technique: 95
-		Pressure: 102
-		Physical: 105
-		Agility: 91
-		Intelligence: 114
-	]
-	Shawn Froste
-	Gabriel Garcia
-	Jack Wallside
-	Nathan Swift
-	Goldie Lemmon
+DF
+[
+	Kick: 90
+	Control: 94
+	Technique: 95
+	Pressure: 102
+	Physical: 105
+	Agility: 91
+	Intelligence: 114
+]
+Shawn Froste
+Gabriel Garcia
+Jack Wallside
+Nathan Swift
+Goldie Lemmon
 
-	MF
-	[-:DEF|+:ATK]
-	[DEF:
-		Kick: 104
-		Control: 112
-		Technique: 109
-		Pressure: 91
-		Physical: 92
-		Agility: 85
-		Intelligence: 100
-	|
-	ATK:
-		Kick: 100
-		Control: 115
-		Technique: 116
-		Pressure: 88
-		Physical: 85
-		Agility: 85
-		Intelligence: 104
+MF
+[-:DEF|+:ATK]
+[DEF:
+	Kick: 104
+	Control: 112
+	Technique: 109
+	Pressure: 91
+	Physical: 92
+	Agility: 85
+	Intelligence: 100
+|
+ATK:
+	Kick: 100
+	Control: 115
+	Technique: 116
+	Pressure: 88
+	Physical: 85
+	Agility: 85
+	Intelligence: 104
 
-	]
-	-Desmodus Drakul
-	+Arion Sherwind
-	-Riccardo Di Rigo
-	-Jude Sharp
-	-Byron Love
-	-Caleb Stonewall
-	+Mehr
-	-Celia Hills
-	-Destin Billows
+]
+-Desmodus Drakul
++Arion Sherwind
+-Riccardo Di Rigo
+-Jude Sharp
+-Byron Love
+-Caleb Stonewall
++Mehr
+-Celia Hills
+-Destin Billows
 
-	FW
-	[-:DEF|+:ATK]
-	[DEF:
-		Kick: 114
-		Control: 112
-		Technique: 102
-		Pressure: 91
-		Physical: 88
-		Agility: 85
-		Intelligence: 100
-	|
-	ATK:
-		Kick: 121
-		Control: 115
-		Technique: 105
-		Pressure: 88
-		Physical: 85
-		Agility: 85
-		Intelligence: 93
-	]
-	+Bash Lancer
-	+Bailong
-	+Victor Blade
-	+Nelly Raimon
-	-+Fei Rune
-	-+David Samford
-	+Zanark Avalonic
-	+Destra
-	+Vladimir Blade
-	+Simeon Ayp
-	+Briar Bloomhurst
-	+Tezcat
-	+Bryce Whitingale
-	+Claude Beacons
-	+Axel Blaze
-	-Nathan Swift
-	-+Shawn Froste
-	+Xavier Schiller
-	+Xavier Foster
-	+Sol Daystar
-	+Torch
-	+Wolfram Vulpeen
-	+Gazelle
-	+Xene
-	+Syon Blaze
-	+Canon Evans
+FW
+[-:DEF|+:ATK]
+[DEF:
+	Kick: 114
+	Control: 112
+	Technique: 102
+	Pressure: 91
+	Physical: 88
+	Agility: 85
+	Intelligence: 100
+|
+ATK:
+	Kick: 121
+	Control: 115
+	Technique: 105
+	Pressure: 88
+	Physical: 85
+	Agility: 85
+	Intelligence: 93
+]
++Bash Lancer
++Bailong
++Victor Blade
++Nelly Raimon
+-+Fei Rune
+-+David Samford
++Zanark Avalonic
++Destra
++Vladimir Blade
++Simeon Ayp
++Briar Bloomhurst
++Tezcat
++Bryce Whitingale
++Claude Beacons
++Axel Blaze
+-Nathan Swift
+-+Shawn Froste
++Xavier Schiller
++Xavier Foster
++Sol Daystar
++Torch
++Wolfram Vulpeen
++Gazelle
++Xene
++Syon Blaze
++Canon Evans
