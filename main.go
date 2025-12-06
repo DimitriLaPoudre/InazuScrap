@@ -172,10 +172,9 @@ func main() {
 		return int(a.sum) - int(b.sum)
 	})
 
-	fmt.Println("test")
-	for _, player := range MF {
-		// if player.name == "David Samford" {
-		fmt.Println(player)
-		// }
+	for _, player := range DF {
+		if player.sum == 691 {
+			fmt.Println(player)
+		}
 	}
 }
