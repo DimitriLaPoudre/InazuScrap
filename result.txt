@@ -8,10 +8,10 @@ GK
 	Agility: 111
 	Intelligence: 97
 ]
-Jean-Pierre Lapin
-Mark Evans
-Joseph King
-Silvia Woods
+()Jean-Pierre Lapin
+(B)Joseph King
+(J)Mark Evans
+(CJT)Silvia Woods
 
 DF
 [
@@ -23,11 +23,11 @@ DF
 	Agility: 91
 	Intelligence: 114
 ]
-Shawn Froste
-Gabriel Garcia
-Jack Wallside
-Nathan Swift
-Goldie Lemmon
+(BLT)Gabriel Garcia
+(L)Goldie Lemmon
+(ABCJ)Jack Wallside
+(J)Nathan Swift
+(L)Shawn Froste
 
 MF
 [-:DEF|+:ATK]
@@ -50,15 +50,15 @@ ATK:
 	Intelligence: 104
 
 ]
--Desmodus Drakul
-+Arion Sherwind
--Riccardo Di Rigo
--Jude Sharp
--Byron Love
--Caleb Stonewall
-+Mehr
--Celia Hills
--Destin Billows
++(JLT)Arion Sherwind
+-(B)Byron Love
+-(A)Caleb Stonewall
+-(BL)Celia Hills
+-()Desmodus Drakul
+-(J)Destin Billows
+-(JT)Jude Sharp
++()Mehr
+-(J)Riccardo Di Rigo
 
 FW
 [-:DEF|+:ATK]
@@ -80,29 +80,29 @@ ATK:
 	Agility: 85
 	Intelligence: 93
 ]
-+Bash Lancer
-+Bailong
-+Victor Blade
-+Nelly Raimon
--+Fei Rune
--+David Samford
-+Zanark Avalonic
-+Destra
-+Vladimir Blade
-+Simeon Ayp
-+Briar Bloomhurst
-+Tezcat
-+Bryce Whitingale
-+Claude Beacons
-+Axel Blaze
--Nathan Swift
--+Shawn Froste
-+Xavier Schiller
-+Xavier Foster
-+Sol Daystar
-+Torch
-+Wolfram Vulpeen
-+Gazelle
-+Xene
-+Syon Blaze
-+Canon Evans
++(BCJ)Axel Blaze
++(AB)Bash Lancer
++(B)Bailong
++(ABCJL)Briar Bloomhurst
++()Bryce Whitingale
++(B)Canon Evans
++()Claude Beacons
+-+(C)David Samford
++()Destra
+-+()Fei Rune
++(B)Gazelle
+-(AJT)Nathan Swift
++(L)Nelly Raimon
+-+(B)Shawn Froste
++()Simeon Ayp
++()Sol Daystar
++()Syon Blaze
++(BLTJ)Tezcat
++(T)Torch
++(A)Victor Blade
++(AJ)Vladimir Blade
++()Wolfram Vulpeen
++(CL)Xavier Foster
++()Xavier Schiller
++(L)Xene
++(A)Zanark Avalonic
