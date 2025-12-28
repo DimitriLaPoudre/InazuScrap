@@ -15,18 +15,9 @@ var baseStyle = lipgloss.NewStyle().
 	BorderStyle(lipgloss.NormalBorder()).
 	BorderForeground(lipgloss.Color("240"))
 
-type Scene uint
-
-const (
-	SceneList   Scene = 0
-	SceneSort   Scene = 1
-	SceneFilter Scene = 2
-)
-
 type core struct {
 	table   table.Model
 	players []model.Player
-	scene   Scene
 }
 
 func (m core) Init() tea.Cmd {
@@ -74,7 +65,7 @@ func main() {
 	players := app.Scrap()
 	fmt.Println("Scrap End")
 
-	players = player.Sort(players, "name", true)
+	players = player.Sort(players, "sum", false)
 
 	rows := player.PlayersToRows(players)
 
@@ -97,7 +88,7 @@ func main() {
 		Bold(false)
 	t.SetStyles(s)
 
-	m := core{t, players, SceneList}
+	m := core{t, players}
 	if _, err := tea.NewProgram(m, tea.WithAltScreen()).Run(); err != nil {
 		fmt.Println("Error running program:", err)
 	}

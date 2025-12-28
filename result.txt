@@ -8,10 +8,11 @@ GK
 	Agility: 111
 	Intelligence: 97
 ]
-()Jean-Pierre Lapin
-(B)Joseph King
+(BT)Jean-Pierre Lapin
+(BJ)Joseph King
 (J)Mark Evans
 (CJT)Silvia Woods
+()Terry Archibald
 
 DF
 [
@@ -26,7 +27,7 @@ DF
 (BLT)Gabriel Garcia
 (L)Goldie Lemmon
 (ABCJ)Jack Wallside
-(J)Nathan Swift
+(JL)Nathan Swift
 (L)Shawn Froste
 
 MF
@@ -50,15 +51,15 @@ ATK:
 	Intelligence: 104
 
 ]
-+(JLT)Arion Sherwind
++(BCJLT)Arion Sherwind
 -(B)Byron Love
--(A)Caleb Stonewall
+-(ABC)Caleb Stonewall
 -(BL)Celia Hills
 -()Desmodus Drakul
 -(J)Destin Billows
 -(JT)Jude Sharp
 +()Mehr
--(J)Riccardo Di Rigo
+-(AJT)Riccardo Di Rigo
 
 FW
 [-:DEF|+:ATK]
@@ -81,18 +82,22 @@ ATK:
 	Intelligence: 93
 ]
 +(BCJ)Axel Blaze
-+(AB)Bash Lancer
-+(B)Bailong
++(ABC)Bash Lancer
++(BL)Bailong
 +(ABCJL)Briar Bloomhurst
 +()Bryce Whitingale
 +(B)Canon Evans
 +()Claude Beacons
 -+(C)David Samford
 +()Destra
++()Fake Victor
++()Falco Flashman
 -+()Fei Rune
 +(B)Gazelle
++()Gandares Baran
 -(AJT)Nathan Swift
-+(L)Nelly Raimon
++(LT)Nelly Raimon
++()Ruger Baran
 -+(B)Shawn Froste
 +()Simeon Ayp
 +()Sol Daystar
