@@ -1,4 +1,4 @@
-package model
+package player
 
 import (
 	"fmt"
@@ -7,9 +7,18 @@ import (
 	"github.com/charmbracelet/bubbles/table"
 )
 
+type PlayerPosition string
+
+const (
+	GK PlayerPosition = "GK"
+	DF PlayerPosition = "DF"
+	MF PlayerPosition = "MF"
+	FW PlayerPosition = "FW"
+)
+
 type Player struct {
 	Name         string
-	Position     string
+	Position     PlayerPosition
 	Element      string
 	Kick         uint
 	Control      uint
@@ -36,7 +45,8 @@ func (p Player) String() string {
 }
 
 func (p *Player) Row() table.Row {
-	return table.Row{p.Name, p.Position, p.Element,
+	return table.Row{p.Name, string(p.Position), p.Element,
+		strconv.FormatUint(uint64(p.Sum), 10),
 		strconv.FormatUint(uint64(p.Kick), 10),
 		strconv.FormatUint(uint64(p.Control), 10),
 		strconv.FormatUint(uint64(p.Technique), 10),
