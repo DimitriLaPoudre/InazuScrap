@@ -16,6 +16,19 @@ const (
 	FW PlayerPosition = "FW"
 )
 
+type PlayerStat string
+
+const (
+	StatKick         PlayerStat = "kick"
+	StatControl      PlayerStat = "control"
+	StatTechnique    PlayerStat = "technique"
+	StatPressure     PlayerStat = "pressure"
+	StatPhysical     PlayerStat = "physical"
+	StatAgility      PlayerStat = "agility"
+	StatIntelligence PlayerStat = "intelligence"
+	StatSum          PlayerStat = "sum"
+)
+
 type Player struct {
 	Name         string
 	Position     PlayerPosition
@@ -57,23 +70,23 @@ func (p *Player) Row() table.Row {
 	}
 }
 
-func (p *Player) GetStat(stat string) uint {
+func (p *Player) GetStat(stat PlayerStat) uint {
 	switch stat {
-	case "sum":
+	case StatSum:
 		return p.Sum
-	case "kick":
+	case StatKick:
 		return p.Kick
-	case "control":
+	case StatControl:
 		return p.Control
-	case "technique":
+	case StatTechnique:
 		return p.Technique
-	case "pressure":
+	case StatPressure:
 		return p.Pressure
-	case "physical":
+	case StatPhysical:
 		return p.Physical
-	case "agility":
+	case StatAgility:
 		return p.Agility
-	case "intelligence":
+	case StatIntelligence:
 		return p.Intelligence
 	default:
 		return 0

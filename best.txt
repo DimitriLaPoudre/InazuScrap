@@ -1,0 +1,107 @@
+FW: (Control>Kick>Technique)
+	Name				Pos	Elem		Sum		Kick		Control		Technique		Pressure		Physical		Agility		Intelligence
+	Aiden Froste		FW	🔥			692		121			115			105				88				85				85			93
+	Axel Blaze			FW	🔥			692		121			115			105				88				85				85			93
+	Ayle Holland		FW	🌪️			692		121			115			105				88				85				85			93 
+	Bailong				FW	🌪️			692		121			115			105				88				85				85			93 
+	Bash Lancer			FW	🌿			692		121			115			105				88				85				85			93
+	Basile Hardy		FW	🔥			692		121			115			105				88				85				85			93
+	Briar Bloomhurst	FW	🏔️			692		121			115			105				88				85				85			93 
+	Bryce Whitingale	FW	🌪️			692		121			115			105				88				85				85			93 
+	Canon Evans			FW	🌪️			692		121			115			105				88				85				85			93 
+	Claude Beacons		FW	🔥			692		121			115			105				88				85				85			93
+	David Samford		FW	🌿			692		121			115			105				88				85				85			93
+	Destra				FW	🏔️			692		121			115			105				88				85				85			93 
+	Fake Victor			FW	🔥			692		121			115			105				88				85				85			93
+	Falco Flashman		FW	🌪️			692		121			115			105				88				85				85			93 
+	Fei Rune			FW	🌿			692		121			115			105				88				85				85			93
+	Gandares Baran		FW	🌿			692		121			115			105				88				85				85			93
+	Gazelle				FW	🌪️			692		121			115			105				88				85				85			93 
+	Harper Evans		FW	🏔️			692		121			115			105				88				85				85			93 
+	Hunter Foster		FW	🔥			692		121			115			105				88				85				85			93
+	Jade Beor			FW	🌿			692		121			115			105				88				85				85			93
+	Keines Elvain		FW	🌿			692		121			115			105				88				85				85			93
+	Nelly Evans			FW	🔥			692		121			115			105				88				85				85			93
+	Nelly Raimon		FW	🔥			692		121			115			105				88				85				85			93
+	Ruger Baran			FW	🌿			692		121			115			105				88				85				85			93
+	Shawn Froste		FW	🌪️			692		121			115			105				88				85				85			93 
+	Simeon Ayp			FW	🏔️			692		121			115			105				88				85				85			93 
+	Sol Daystar			FW	🔥			692		121			115			105				88				85				85			93
+	Syon Blaze			FW	🔥			692		121			115			105				88				85				85			93
+	Tezcat				FW	🌿			692		121			115			105				88				85				85			93
+	Torch				FW	🔥			692		121			115			105				88				85				85			93
+	Victor Blade		FW	🔥			692		121			115			105				88				85				85			93
+	Victorio Cryptix	FW	🌪️			692		121			115			105				88				85				85			93 
+	Vladimir Blade		FW	🔥			692		121			115			105				88				85				85			93
+	Wolfram Vulpeen		FW	🔥			692		121			115			105				88				85				85			93
+	Xavier Foster		FW	🔥			692		121			115			105				88				85				85			93
+	Xavier Schiller		FW	🌿			692		121			115			105				88				85				85			93
+	Xavier Schiller		FW	🔥			692		121			115			105				88				85				85			93
+	Xene				FW	🔥			692		121			115			105				88				85				85			93
+	Zanark Avalonic		FW	🏔️			692		121			115			105				88				85				85			93
+
+MF: (Technique>Intelligence>Control)
+	Name				Pos	Elem		Sum		Kick		Control		Technique		Pressure		Physical		Agility		Intelligence
+	Alexander Allegrov	MF	🌪️			693		100			115			116				88				85				85			104
+	Arion Sherwind		MF	🌪️			693		100			115			116				88				85				85			104 
+	Atlas Strongwater	MF	🌪️			693		100			115			116				88				85				85			104 
+	Celia Hills			MF	🌪️			693		100			115			116				88				85				85			104 
+	Ivan Allegrov		MF	🌪️			693		100			115			116				88				85				85			104 
+	Jimmy Wongfu		MF	🌪️			693		100			115			116				88				85				85			104 
+	Lucas Star			MF	🌪️			693		100			115			116				88				85				85			104 
+	Mehr				MF	🌪️			693		100			115			116				88				85				85			104 
+	Ryoma Nishiki		MF	🏔️			693		100			115			116				88				85				85			104 
+	Serge Riktov		MF	🔥			693		100			115			116				88				85				85			104
+	Sergi Hernández		MF	🏔️			693		100			115			116				88				85				85			104
+
+Lateral DF: (Intelligence>Technique>Agility)
+	Name				Pos	Elem		Sum		Kick		Control		Technique		Pressure		Physical		Agility		Intelligence
+	Alexander Allegrov	MF	🌪️			693		100			115			116				88				85				85			104 
+	Arion Sherwind		MF	🌪️			693		100			115			116				88				85				85			104 
+	Atlas Strongwater	MF	🌪️			693		100			115			116				88				85				85			104 
+	Celia Hills			MF	🌪️			693		100			115			116				88				85				85			104 
+	Ivan Allegrov		MF	🌪️			693		100			115			116				88				85				85			104 
+	Jimmy Wongfu		MF	🌪️			693		100			115			116				88				85				85			104 
+	Lucas Star			MF	🌪️			693		100			115			116				88				85				85			104 
+	Mehr				MF	🌪️			693		100			115			116				88				85				85			104 
+	Ryoma Nishiki		MF	🏔️			693		100			115			116				88				85				85			104 
+	Serge Riktov		MF	🔥			693		100			115			116				88				85				85			104 
+	Sergi Hernández		MF	🏔️			693		100			115			116				88				85				85			104
+
+Central DF: (Pressure=Physical>Intelligence)
+	Name				Pos	Elem		Sum		Kick		Control		Technique		Pressure		Physical		Agility		Intelligence
+	Cao Cao				DF	🏔️			690		86			90			88				105				109				91			121 
+	Baron Oxford		DF	🏔️			675		84			87			85				104				107				89			119 
+	Bobby Shearer		DF	🌿			675		84			87			85				104				107				89			119
+	Boulder Vargan		DF	🔥			675		84			87			85				104				107				89			119
+	Camellia Travis		DF	🌿			675		84			87			85				104				107				89			119
+	Cobra				DF	🏔️			675		84			87			85				104				107				89			119 
+	Coryn Fong			DF	🔥			675		84			87			85				104				107				89			119
+	Elaine Sereno		DF	🌪️			675		84			87			85				104				107				89			119 
+	Gele				DF	🌪️			675		84			87			85				104				107				89			119 
+	Govin Castlehoven	DF	🌪️			675		84			87			85				104				107				89			119 
+	Grandpa Danger		DF	🔥			675		84			87			85				104				107				89			119
+	Jim Wraith			DF	🌿			675		84			87			85				104				107				89			119
+	Keenan Sharpe		DF	🏔️			675		84			87			85				104				107				89			119 
+	Kenard Montemar		DF	🏔️			675		84			87			85				104				107				89			119 
+	Kiko Calavento		DF	🌿			675		84			87			85				104				107				89			119
+	Luke Triton			DF	🌪️			675		84			87			85				104				107				89			119 
+	Miles Euclid		DF	🌿			675		84			87			85				104				107				89			119
+	Nerida Neuland		DF	🌪️			675		84			87			85				104				107				89			119 
+	Patrie Ambrosia		DF	🌿			675		84			87			85				104				107				89			119
+	Saros Algebra		DF	🌿			675		84			87			85				104				107				89			119
+	Thiago Torres		DF	🔥			675		84			87			85				104				107				89			119
+	Venom Braggard		DF	🌿			675		84			87			85				104				107				89			119
+	Xyron Madric		DF	🔥			675		84			87			85				104				107				89			119
+
+GK: (Agility>Physical>Pressure)
+	Name				Pos	Elem		Sum		Kick		Control		Technique		Pressure		Physical		Agility		Intelligence
+	Duske Grayling		GK	🌿			689		90			97			91				98				105				111			97
+	Dvalin				GK	🔥			689		90			97			91				98				105				111			97
+	Jean-Pierre Lapin	GK	🏔️			689		90			97			91				98				105				111			97 
+	Joseph King			GK	🔥			689		90			97			91				98				105				111			97
+	Lars Luceafăr		GK	🏔️			689		90			97			91				98				105				111			97 
+	Lumina				GK	🌪️			689		90			97			91				98				105				111			97 
+	Mark Evans			GK	🏔️			689		90			97			91				98				105				111			97 
+	Silvia Woods		GK	🏔️			689		90			97			91				98				105				111			97 
+	Terry Archibald		GK	🌪️			689		90			97			91				98				105				111			97

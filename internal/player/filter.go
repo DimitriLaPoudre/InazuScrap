@@ -6,6 +6,18 @@ type PlayerFilter struct {
 	Positions []PlayerPosition
 }
 
+func Deduplicate(players []Player) []Player {
+	seen := make(map[Player]struct{})
+	result := make([]Player, 0, len(players))
+	for _, p := range players {
+		if _, ok := seen[p]; !ok {
+			seen[p] = struct{}{}
+			result = append(result, p)
+		}
+	}
+	return result
+}
+
 func Filter(l []Player, f PlayerFilter) []Player {
 	r := []Player{}
 	for _, p := range l {
